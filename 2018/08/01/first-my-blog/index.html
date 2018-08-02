@@ -24,7 +24,8 @@
 <meta property="og:image" content="http://yoursite.com/images/cangku.png">
 <meta property="og:image" content="http://yoursite.com/images/yuming.png">
 <meta property="og:image" content="http://yoursite.com/images/nodejs.png">
-<meta property="og:updated_time" content="2018-08-02T04:29:15.000Z">
+<meta property="og:image" content="http://yoursite.com/images/firstblog.png">
+<meta property="og:updated_time" content="2018-08-02T04:32:16.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="第一个blog测试">
 <meta name="twitter:description" content="第一个blog测试">
@@ -104,7 +105,7 @@
             
               <li class="archive-list-container">
                 <a href="javascript:;">归档</a>
-                <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/">2018</a><span class="archive-list-count">2</span></li></ul>
+                <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/">2018</a><span class="archive-list-count">1</span></li></ul>
               </li>
             
           
@@ -212,6 +213,7 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g <span class="comment">#生成</span></span><br><span class="line">$ hexo s <span class="comment">#启动服务</span></span><br></pre></td></tr></table></figure>
 <p>执行以上命令之后，hexo就会在public文件夹生成相关html文件，这些文件将来都是要提交到github去的</p>
 <p>hexo s是开启本地预览服务，打开浏览器访问 <a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> 即可看到内容.</p>
+<figure class="article-gallery-img" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject"><a href="/images/firstblog.png" title=""><img src="/images/firstblog.png" alt=""></a><figcaption class="caption"></figcaption></figure>
 <h3 id="上传到github"><a href="#上传到github" class="headerlink" title="上传到github"></a>上传到github</h3><p>如果你一切都配置好了，发布上传很容易，一句hexo d就搞定，当然关键还是你要把所有东西配置好。</p>
 <p>首先，ssh key肯定要配置好。</p>
 <p>其次，配置_config.yml中有关deploy的部分：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repository: git@github.com:hakold/hakold.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure></p>
